@@ -7,6 +7,113 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- NOTE: It is STRONGLY recommended to use CSS for stylization, and HTML for structure. -->
+    <!-- Unclear what exactly was meant, but the presenter mentioned that screen readers might treat strong and em differently in html vs css. Was around 1:35:00-ish. Probably earlier than that. -->
+
+    <!-- sup raises text -->
+    <!-- sub lowers text -->
+    <h1>Hello I'm <sup>1st</sup> John <sub>in town</sub> </h1>
     
+    <!-- strong makes bold text -->
+    <!-- em makes italicized text -->
+    <p>Lorem ipsum <strong>dolor sit amet</strong> consectetur adipisicing <em>elit.</em> Minima laborum incidunt quaerat accusantium!</p>
+    
+    <!-- Using speical characters -->
+    <h1>copyright &copy; </h1>
+    
+    <!-- ul is for unordered lists -->
+    <!-- Unordered lists are typically used for navigation. -->
+    <!-- Unordered lists are displayed as bulletpoints -->
+    
+    <!-- li is for list item -->
+    <ul>
+        <li>John</li>
+        <li>Peter</li>
+        <li>Sara</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- ol is for ordered list -->
+    <!-- Ordered lists are displayed as numbered items -->
+    <ol>
+        <li>John</li>
+        <li>Peter</li>
+        <li>Sara</li>
+    </ol>
+
+    <!-- Nested lists -->
+    <ul>
+        <li>John</li>
+        <li>Peter</li>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+        <li>Sara</li>
+    </ul>
+
+    <!-- Making tables -->
+    <!-- Tables include: Rows, Columns, and data -->
+    <!-- NOTE: Row = Across. Column = Down -->
+    <!-- th is for table heading -->
+    <!-- tr is for table row -->
+    <!-- tc is for table column -->
+    <!-- td is for table data -->
+    <table>
+        <tr>
+            <th>Canidate 1</th>
+            <th>Canidate 2</th>
+            <th>Canidate 3</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Peter</td>
+            <td>Sara</td>
+        </tr>
+    </table>
+
+    <!-- Making a form -->
+    <!-- IMPORTANT NOTE: When working with forms in HTML and CSS, you will be displaying from "the front end". Data collection will come from "the back end" with something like PHP. form has both "action" and "method" which we won't use because we won't be collecting data through HTML or CSS. -->
+    <!-- Action means "Where is this data going to be sent?" -->
+    <!-- Method means "How are we going to process the data?" (Send it via email, etc.) -->
+    <form action="" method="">
+
+        <!-- label element -->
+        <!-- This is how the input is labeled -->
+        <!-- It also makes it so when you CLICK on the LABEL (in this case, "First name") the text cursor appears on the input field. -->
+        <label for="name">First name</label>
+
+        <!-- type is what sort o data is collected -->
+        <!-- name is what is displayed -->
+        <!-- id is used for label -->
+        <input type="text" name="name" id="name">
+
+
+        <!-- display a fancy button -->
+        <button type="submit">Submit</button>
+
+        <br>
+
+        <!-- alternate way to make an input button -->
+        <!-- NOTE: commented out to avoid confusion on the webpage -->
+        <!-- <input type="submit"> -->
+
+        <!-- input password makes it so when you type text, it is hidden -->
+        <!-- placeholder is just the text that shows up before you start typing -->
+        <label for="password">Password</label>
+        <input type="password" placeholder="password" id="password">
+        <input type="submit">
+
+        <br>
+
+        <!-- input email verifies that the text input includes an @ -->
+        <!-- input email is not advanced enough to validate .com, .org, .edu etc. -->
+        <!-- value attribute allows you to "hardcoe" something. It's good for times where you might be editing something(...?) I guess the idea is if you are testing for something, and a specific field can't be empty, you use the "value" atrribute, and fill it with (whatever would work) to make it meet the bare minimum requirements. -->
+        <!-- value overrides placeholder text -->
+        <label for="email">Email</label>
+        <input type="email" id="email" value="email@example.com">
+    </form>
 </body>
 </html>
