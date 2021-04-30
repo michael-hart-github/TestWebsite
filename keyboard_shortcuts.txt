@@ -1,0 +1,14 @@
+Just some quick notes about shortcuts I should try memorizing
+NOTE: If a shortcut reads as soemthing like "Ctrl+K R", click Ctrl+k -> release both keys -> click r
+
+ALT
+Alt+Click       Multi-cursor
+Alt+Up/Down     Move text to different line
+Alt+left/right  Switch between files (tabs) quickly
+Alt+z           Toggle wordwrap
+
+CTRL
+Ctrl+l          Select all text on line
+Ctrl+/          Insert comment
+Ctrl+K r        Show current file in File Explorer
+Ctrl+`          Open integrated terminal

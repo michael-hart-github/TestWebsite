@@ -1,3 +1,45 @@
+<!-- What are the differences between HTML, CSS, and JavaScript? -->
+HTML        Structure and Content
+CSS         Style
+JavaScript  Interactivity and Functionality
+
+
+<!-- Tell me more about JavaScript -->
+JavaScript can also dynamically update a page in real-time. JavaScript can also do things like display moving animations on a webpage, or have specific events like "onclick" or "onhover" for specific events. JavaScript is loaded within <script> tags, or included remotely via <script src="/location/of/javascript_file.js"></script>
+
+
+<!-- See an example of JavaScript in action -->
+<!-- Changing text from one thing to another -->
+<body>
+    <div id="demo">Hi there!</div>
+    <script type="text/javascript">
+        document.getElementById("demo").innerHTML = "Hack the Planet";
+    </script>
+</body>
+<!-- Changing text after clicking a button -->
+<body>
+    <div id="demo">Hi there!</div>
+    <button onclick='document.getElementById("demo").innerHTML = "Button Clicked";'>Click Me!</button>
+</body>
+
+
+<!-- What does <!DOCTYPE html> do? -->
+DOCTYPE html defines that the page is a HTML5 document.
+
+
+<!-- What is whitespace collapsing? -->
+whitespace collapsing is means that it doesn't repsect spaces or newlines between characters.
+<!-- Example of whitepsace collapsing -->
+...
+<body>
+    <p>my       sentence
+    </p>
+</body>
+...
+<!-- Result -->
+my sentence
+
+
 <!-- What does Title do? -->
 Title is the text that shows up in a tab
 <!-- Example of how title works -->
@@ -17,13 +59,13 @@ Head is NOT displayed in the browser Head is where you put metadata
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
 
 
-<!-- How to: make link open on new tab -->
+<!-- How to make link open on new tab -->
 <body>
     <a href="#" target="_blank">
 </body>
 
 
-<!-- How to: "return to top of page" -->
+<!-- How to implement return to top of page button -->
 <body>
     <h1 id="top">Whatever Text</h1>
     ...
@@ -31,27 +73,11 @@ https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_hea
 </body>
 
 
-<!-- How to: "change size of image" -->
+<!-- How to change size of image -->
 <img src="/images/KIMG0781.JPG" height="260">
 
 
-<!-- What is: whitespace collapsing? -->
-whitespace collapsing is just the term used to identify that doing something like:
-
-my
-
-
-
-
-sentence
-
-will show as:
-my sentence
-
-It doesn't repsect the amount of spaces or newlines between characters.
-
-
-<!-- Prettier: How to setup properly --!>
+<!-- How to setup Prettier properly -->
 1. Install the extension Prettier.
 2. Reload
 3. Settings (ctrl+,)
@@ -59,3 +85,21 @@ It doesn't repsect the amount of spaces or newlines between characters.
 5. Choose Format on paste & format on save
 6. Default Formatter -> Prettier
 7 Close
+
+
+<!-- What is HTML input injection? -->
+If you have a field that accepts input, and you can use something like h1 to display text on the website without any form of checking or sanitization, it means that HTML can be injected directly into the website. Never to trust user input. Sanitize everything
+<!-- Example of input injection issue -->
+<script>
+    function sayHi() {
+        const name = document.getElementById('name').value
+        document.getElementById("welcome-msg").innerHTML = "Welcome " + name
+    }
+</script>
+
+
+
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
