@@ -35,4 +35,27 @@ https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_hea
 <img src="/images/KIMG0781.JPG" height="260">
 
 
-<!--  -->
+<!-- What is: whitespace collapsing? -->
+whitespace collapsing is just the term used to identify that doing something like:
+
+my
+
+
+
+
+sentence
+
+will show as:
+my sentence
+
+It doesn't repsect the amount of spaces or newlines between characters.
+
+
+<!-- Prettier: How to setup properly --!>
+1. Install the extension Prettier.
+2. Reload
+3. Settings (ctrl+,)
+4. Search for "format"
+5. Choose Format on paste & format on save
+6. Default Formatter -> Prettier
+7 Close
