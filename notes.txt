@@ -1,0 +1,38 @@
+<!-- What does Title do? -->
+Title is the text that shows up in a tab
+<!-- Example of how title works -->
+/images/title-tag.png
+
+
+<!-- What does Head do? -->
+Head is NOT displayed in the browser Head is where you put metadata
+<!-- Exmaples of metadata you can put in head -->
+<head ... >
+* title
+* meta
+* link
+* script
+* style
+<!-- More about Head -->
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
+
+
+<!-- How to: make link open on new tab -->
+<body>
+    <a href="#" target="_blank">
+</body>
+
+
+<!-- How to: "return to top of page" -->
+<body>
+    <h1 id="top">Whatever Text</h1>
+    ...
+    <a href="#top">Back to top</a>
+</body>
+
+
+<!-- How to: "change size of image" -->
+<img src="/images/KIMG0781.JPG" height="260">
+
+
+<!--  -->
