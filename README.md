@@ -8,4 +8,4 @@ https://www.youtube.com/watch?v=mU6anWqZJcc
 I changed index.html to old_index.html after the presenter was about to delete a lot of the stuff we had learned at 1:33:05
 
 ### Stopping point for the night
-Stopping at 1:58:40
+Stopping at 2:09:30
