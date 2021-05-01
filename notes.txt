@@ -98,8 +98,73 @@ If you have a field that accepts input, and you can use something like h1 to dis
 </script>
 
 
+<!-- What is an HTTP method, and which are most commonly used for webservers? -->
+An HTTP method is a means to communcate data to and from a server. The two most common methods for a webserver are:
+GET         Retrieve Content
+POST        Send data (comment, performing login, etc.)
+
+The other methods are:
+HEAD        (Similar to GET) Asks for a response without the response body
+PUT         Replaces current data with payload
+DELETE      Deletes the specified resource
+CONNECT     Establishes a tunnel to the server
+OPTIONS     Used to describe the communication options
+TRACE       Message loop-back test
+PATCH       Apply partial modifications
+
+<!-- What ports do HTTP(s) use? -->
+HTTP        80
+HTTPS       443
+
+
+<!-- What are the different server response codes, and what do they mean? -->
+100-199     Information
+200-299     Successes (200 OK is the "normal" response for a GET)
+300-399     Redirects (the information you want is elsewhere)
+400-499     Client errors (You did something wrong, like asking for something that doesn't exist)
+500-599     Server errors (The server tried, but something went wrong on their side)
+
+
+<!-- What are cookies commonly used for? -->
+Cookies are commonly used for session management and advertising. Cookies are normally sent with every HTTP request made to a server. Cookies that are store to each browser, so a cookie in a Firefox browser will not be present in a Chrome browser. HTTP requests are "stateless" (do not track information) so cookies are used to track that information. Cookies are typically only sent with requests to sites that set them; advertising and tracking cookies sometimes work differently. Cookies are normally set by the server through the response header "Set-Cookie". Cookies can also be set by JavaScript within the browser.
+
+
+<!-- The parts of a cookie are -->
+Name          Identifies the cookie
+Value         Where the data is stored
+Expiry date   When the browser will get rid of the cookie
+Path          Determines what requests the cookie will be sent with
+
+
+<!-- Examples of cookies in action -->
+* Tracking which items are in a shopping cart
+* Who you are
+* What you have interacted with on the website
+
+
+<!-- Cookies and session tokens -->
+Session tokens are what lets a web server identify requests you make. If you steal someone elses session token, you are often allowed to impersonate them.
+
+
+<!-- To create a cookie (in Chrome) for a website -->
+Dev Tools (F12) -> Application tab -> Storage -> Cookies -> Website -> double click in empty area
+
+
+<!--  -->
+
+
 
 <!--  -->
 <!--  -->
 <!--  -->
 <!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+
+
+Additional resources:
+https://tryhackme.com/room/webfundamentals
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies

@@ -30,4 +30,4 @@ Take a wild guess. It was around 2:10:00, maybe a minute or two before that.
 
 ### Stopping point
 
-Stopping at
+Stopping at 2:32:24
