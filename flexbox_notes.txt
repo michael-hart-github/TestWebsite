@@ -73,7 +73,7 @@ center      Items align at the vertical center of the container.
 baseline    Items display at the baseline of the container.
 stretch     Items are stretched to fit the container.
 
-* You can change content HOW MANY LINES using:
+* You can change content ON MANY LINES using:
 
 #pond {
   display: flex;
